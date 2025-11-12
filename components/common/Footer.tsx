@@ -119,7 +119,7 @@ export default function Footer() {
 
         {/* ===== Bottom Bar ===== */}
         <div className="px-4 sm:px-6 md:px-8 lg:pl-30 lg:pr-30">
-          <div className="flex p-4 md:p-6 flex-col md:flex-row md:justify-between gap-4 border-t border-primary-20 md:border-primary-100">
+          <div className="flex p-4 md:p-6 flex-col md:flex-row md:justify-between justify-center items-center gap-4 border-t border-primary-20 md:border-primary-100">
             <p className="text-xs md:text-sm text-left">
               &copy;{new Date().getFullYear()} BROOKS MM INTERNATIONAL
             </p>
