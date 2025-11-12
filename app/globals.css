@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Primary - #1A4E1A */
+  --color-primary-100: #1A4E1A;
+  --color-primary-80: #1A4E1ACC;
+  --color-primary-60: #1A4E1A99;
+  --color-primary-40: #1A4E1A66;
+  --color-primary-20: #1A4E1A33;
+
+  /* Secondary - #61B859 */
+  --color-secondary-100: #61B859;
+  --color-secondary-80: #61B859CC;
+  --color-secondary-60: #61B85999;
+  --color-secondary-40: #61B85966;
+  --color-secondary-20: #61B85933;
+
+  /* Accent - #C6A02F */
+  --color-accent-100: #C6A02F;
+  --color-accent-80: #C6A02FCC;
+  --color-accent-60: #C6A02F99;
+  --color-accent-40: #C6A02F66;
+  --color-accent-20: #C6A02F33;
+
+  /* Background White - #F1FFFA */
+  --color-bgwhite-100: #F1FFFA;
+  --color-bgwhite-80: #F1FFFA33;
+  --color-bgwhite-60: #F1FFFA66;
+  --color-bgwhite-40: #FEFEFE99;
+  --color-bgwhite-20: #F1FFFA33;
+
+  /* Text Black - #010B14 */
+  --color-textblack-100: #010B14;
+  --color-textblack-80: #010B1433;
+  --color-textblack-60: #010B1466;
+  --color-textblack-40: #010B1499;
+  --color-textblack-20: #010B14CC;
+
+  /* Fonts */
+  --font-family-primary: 'Lato', sans-serif;
+  --font-family-secondary: 'Cardo', serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-primary);
+  cursor: pointer;
 }
